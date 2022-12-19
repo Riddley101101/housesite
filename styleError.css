@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: Post No Bills Jaffna;
+  src: url(/fonts/PostNoBillsJaffna-Regular.woff);
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+input ::-webkit-input-placeholder {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #BEBEBE;
+}
+
+input ::-moz-placeholder {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #BEBEBE;
+}
+
+input :-ms-input-placeholder {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #BEBEBE;
+}
+
+input ::-ms-input-placeholder {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #BEBEBE;
+}
+
+input ::placeholder {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #BEBEBE;
+}
+
+input {
+  padding: 20px;
+  width: 255px;
+  height: 50px;
+  margin-bottom: 35px;
+  background: #FFFFFF;
+  opacity: 0.2;
+}
+
+.header {
+  padding: 10px 0 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 200;
+}
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(33, 40, 48, 0.9333333333);
+  -webkit-transform: translate(0px);
+          transform: translate(0px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.logo {
+  font-family: Post No Bills Jaffna;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  color: #FFFFFF;
+}
+
+.descr {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.12em;
+  color: #FFFFFF;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 40px;
+  padding: 25px 0 0 0;
+}
+.menu__link a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.menu__link a:hover {
+  color: #D4C17F;
+  cursor: pointer;
+}
+
+.content {
+  padding-top: 195px;
+  background: #242B33;
+}
+
+.footer {
+  padding: 60px 0;
+  background: #2D343C;
+}
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__logo {
+  display: inline-block;
+  max-width: 140px;
+}
+.footer__link a {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.footer__link {
+  margin: 0 0 15px 0;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.footer__link span {
+  color: #D4C17F;
+}
+.footer__logo {
+  margin-right: 15px;
+}
+
+.error {
+  background-color: #353f4b;
+  padding-bottom: 30px;
+  padding: 100px;
+}
+.error__title {
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.footer {
+  padding: 250px 0 200px 0;
+}
+
+@media (max-width: 1250px) {
+  .container {
+    padding: 0px 30px;
+  }
+  .header__name {
+    font-size: 35px;
+  }
+  .header__descr {
+    font-size: 10px;
+  }
+}
+@media (max-width: 833px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    top: 15px;
+    width: 40px;
+    height: 20px;
+  }
+  .header__burger span {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 5;
+  }
+  .header__burger span:nth-of-type(2) {
+    top: 50%;
+  }
+  .header__burger span:nth-of-type(3) {
+    top: 100%;
+  }
+  .header__burger.active span:first-of-type {
+    opacity: 0;
+  }
+  .header__burger.active span:nth-of-type(2) {
+    top: calc(50% - 2px);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .header__burger.active span:nth-of-type(3) {
+    top: calc(50% - 2px);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 52, 60, 0.8980392157);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .menu.active {
+    height: 100%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .menu__list {
+    margin-top: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu__link {
+    margin-bottom: 70px;
+  }
+  .menu__link a {
+    font-size: 40px;
+  }
+  .header__name {
+    font-size: 33px;
+  }
+  .header__descr {
+    font-size: 9px;
+  }
+  .footer__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+  .error__title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 431px) {
+  .menu__list a {
+    font-size: 30px;
+  }
+  .menu__link {
+    margin-bottom: 40px;
+  }
+  .error__title {
+    font-size: 14px;
+  }
+}
