@@ -10,9 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (windowCenter >= scrollOffset) {
                 el.classList.add('anim-class');
             }
-            else {
-                el.classList.remove('anim-class');
-            }
         });
     };
 
