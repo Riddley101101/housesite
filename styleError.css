@@ -19,7 +19,7 @@ ul, li {
 
 @font-face {
   font-family: Post No Bills Jaffna;
-  src: url(/fonts/PostNoBillsJaffna-Regular.woff);
+  src: url(/housesite/fonts/PostNoBillsJaffna-Regular.woff);
 }
 .container {
   max-width: 1170px;
