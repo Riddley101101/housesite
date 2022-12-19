@@ -19,7 +19,7 @@ ul, li {
 
 @font-face {
   font-family: Post No Bills Jaffna;
-  src: url(/fonts/PostNoBillsJaffna-Regular.woff);
+  src: url(/housesite/fonts/PostNoBillsJaffna-Regular.woff);
 }
 .container {
   max-width: 1170px;
@@ -153,7 +153,7 @@ input {
 }
 
 .promo {
-  background: url(/images/background.jpg);
+  background: url(/housesite/images/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -277,7 +277,7 @@ input {
 .input {
   padding-bottom: 130px;
   padding-top: 190px;
-  background-image: url(/images/background-3.jpg);
+  background-image: url(/housesite/images/background-3.jpg);
   background-position: center;
 }
 .input__inner {
